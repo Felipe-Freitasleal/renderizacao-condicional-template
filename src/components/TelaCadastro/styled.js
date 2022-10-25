@@ -6,7 +6,10 @@ export const FormContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-`;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr;
+`
 
 export const Form = styled.div`
   width: 40vw;
@@ -16,6 +19,8 @@ export const Form = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  grid-row: 2 / 4;
+  grid-column: 2 / 3;
 `;
 
 export const Input = styled.input`
@@ -52,3 +57,9 @@ export const StyledLabel = styled.label`
   align-items: center;
   justify-content: space-between;
 `;
+
+export const H = styled.h1`
+ grid-column: 2 / 3;
+ justify-self: center;
+ align-self: flex-start;
+`
